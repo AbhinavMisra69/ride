@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+    .container {
+        max-width: 60%;
+        margin: 30px auto;
+        padding: 50px;
+        min-height: 100vh;
+        border-radius: 30px;
+        
+        backdrop-filter: blur(100px);
+       
+        box-shadow: 0 0 50px rgba(0, 0, 0, 0.3);
+        display: flex;
+        flex-direction: column;
+      }
+
+      .container2{
+        margin-left: 265px;
+        margin-bottom: 30px;
+        width: 60%;
+        
+        padding: 20px;
+        height: 70px;
+        border-radius: 150px;
+        background-color: #1f1d1d;
+        border: 3px solid #686060;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        
+        position: fixed;
+            bottom: 0;
+            
+      }
+      
+      .user-message, .system-response {
+        padding: 20px 20px;
+        border-radius: 5px;
+        margin-bottom: 30px;
+       
+      }
+      
+      .user-message {
+       
+        text-align: center;
+        font-size: 1.3rem;
+        background-color: #686060;
+        border-radius: 50px;
+        border: 3px solid rgb(18, 17, 17);
+      }
+      
+      .system-response {
+        background-color: #686060;
+        text-align: center;
+        font-style: italic;
+        border-radius: 50px;
+        font-size: 1.2 rem;
+        border: 3px solid rgb(18, 17, 17);
+        min-height: 50px;
+        height: auto;
+      }
+      
+      .user-input {
+        display: inline-flex;
+        align-items: center;
+        background-color: #686060;
+        color: white;
+        width: 600px;
+        border-radius: 50px;
+        margin-left: 20px;
+        margin-bottom: 8px;
+        margin-top: 2px;
+        
+      }
+      
+      input[type="text"] {
+        
+        background-color: #686060;
+        margin-left: 30px;
+        margin-right: 30px;
+        color: white;
+        width: 500px;
+       
+        font-size: 16px;
+      }
+      
+   
+      
+      </style>
+ 
+  <meta charset="UTF-8">
+  <title>Your Page Title</title>
+  <link rel="stylesheet" href="style3.css">  </head>
+<body>
+   <header>
+    <div class="logo"><p>PRACTERVIEW</p></div>
+     <nav>
+    <ul>
+       <li><a href="">Home</a></li>
+       <li><a href="">About</a></li>
+       <li><a href="">Interview</a></li>
+       <li><a href="">question bank</a></li>        
+   </ul>
+  </nav>
+  <div class="buttons">
+    <button><a href="">Login</a></button>
+    <button><a href="">Sign in </a></button>
+  </div>
+   </header>
+
+  <div class="container">
+    <div class="user-message">
+      <p>You can answer questions in both speech and text .</p>
+    </div>
+    <div class="system-response">
+      <p>...</p>
+    </div>
+</div>
+<div class="container2">
+    <div class="user-input">
+     
+      <input type="text" placeholder="Type your message here">
+    </div>
+    <div class="object">
+        <div class="outline">
+        </div>
+        <div class="outline" id="delayed">
+        </div>
+        <div class="button">
+        </div>
+        <div class="button" id="circlein">
+            <svg class="mic-icon" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1000 1000" enable-background="new 0 0 1000 1000" xml:space="preserve" style="fill:#1E2D70">
+<g><path d="M500,683.8c84.6,0,153.1-68.6,153.1-153.1V163.1C653.1,78.6,584.6,10,500,10c-84.6,0-153.1,68.6-153.1,153.1v367.5C346.9,615.2,415.4,683.8,500,683.8z M714.4,438.8v91.9C714.4,649,618.4,745,500,745c-118.4,0-214.4-96-214.4-214.4v-91.9h-61.3v91.9c0,141.9,107.2,258.7,245,273.9v124.2H346.9V990h306.3v-61.3H530.6V804.5c137.8-15.2,245-132.1,245-273.9v-91.9H714.4z"/></g>
+</svg>
+        </div>
+ </div>
+</div>
+
+
+  <script src="script.js"></script>  </body>
+</html>
